@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
+    <link rel="stylesheet" href="./css/style.css" />
 
     <script type="module" src="./index.js"></script>
   </head>
@@ -15,9 +16,12 @@
         autocomplete="off"
         placeholder="Search images..."
       />
-      <button type="submit">Search</button>
+      <button class="search-btn" type="submit">Search</button>
     </form>
     <div class="gallery"></div>
-    <button type="button" class="load-more">Load more</button>
+    <div class="load-more-btn">
+      <button hidden type="button" class="load-more">Load more</button>
+      <a hidden class="home" href="#search-form">Home</a>
+    </div>
   </body>
 </html>
